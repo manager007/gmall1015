@@ -32,6 +32,7 @@ public class UserServiceImpl implements UserService {
         UserAddress userAddress = new UserAddress();
         userAddress.setUserId(userId);
         List<UserAddress> addresses = userAddressMapper.select(userAddress);
+        System.out.print(userAddress);
         return addresses;
     }
 
